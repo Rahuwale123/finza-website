@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-finza-primary: #6C63FF;
+  --color-finza-secondary: #A29BFE;
+  --color-finza-accent: #00D1FF;
+  --color-finza-black: #000000;
+  --color-finza-white: #FFFFFF;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #fafafa;
+  color: var(--color-finza-black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(108, 99, 255, 0.05);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-finza-primary), var(--color-finza-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
