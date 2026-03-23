@@ -14,13 +14,56 @@ export default function Goals() {
             className="order-2 lg:order-1 relative"
           >
             <div className="absolute -inset-4 bg-gradient-to-r from-finza-primary/10 to-finza-accent/10 rounded-[3rem] blur-xl -z-10" />
-            <img 
-              src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800&h=600" 
-              alt="Finza Goal Tracking" 
-              className="w-full rounded-[2rem] shadow-2xl border border-white/50 object-cover"
-              referrerPolicy="no-referrer"
-              loading="lazy"
-            />
+            <div className="w-full h-[450px] flex items-center justify-center relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-finza-primary/10 to-finza-accent/10 rounded-[3rem] blur-xl -z-10" />
+              
+              {/* Central Target Animation */}
+              <div className="relative">
+                <motion.div
+                  animate={{ scale: [1, 1.1, 1] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                  className="w-32 h-32 rounded-full bg-finza-primary/10 flex items-center justify-center relative z-10"
+                >
+                  <Target className="w-16 h-16 text-finza-primary" />
+                </motion.div>
+                
+                {/* Pulsing Rings */}
+                {[1, 2, 3].map((i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0.5, scale: 1 }}
+                    animate={{ opacity: 0, scale: 2 }}
+                    transition={{ duration: 3, repeat: Infinity, delay: i * 1, ease: "easeOut" }}
+                    className="absolute inset-0 rounded-full border-2 border-finza-primary/30"
+                  />
+                ))}
+                
+                {/* Floating Elements (Goal Icons) */}
+                <motion.div
+                  animate={{ y: [-10, 10, -10], x: [-5, 5, -5] }}
+                  transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                  className="absolute -top-16 -left-16 w-16 h-16 bg-white rounded-2xl shadow-xl border border-gray-100 flex items-center justify-center text-2xl"
+                >
+                  🏠
+                </motion.div>
+                
+                <motion.div
+                  animate={{ y: [10, -10, 10], x: [5, -5, 5] }}
+                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                  className="absolute -bottom-12 -left-8 w-14 h-14 bg-white rounded-2xl shadow-lg border border-gray-100 flex items-center justify-center text-xl"
+                >
+                  ✈️
+                </motion.div>
+                
+                <motion.div
+                  animate={{ y: [-5, 5, -5], x: [10, -10, 10] }}
+                  transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+                  className="absolute top-0 -right-20 w-12 h-12 bg-white rounded-2xl shadow-lg border border-gray-100 flex items-center justify-center text-xl"
+                >
+                  💰
+                </motion.div>
+              </div>
+            </div>
             
             {/* Floating Goal Card */}
             <motion.div 

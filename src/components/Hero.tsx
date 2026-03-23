@@ -49,9 +49,9 @@ export default function Hero() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-finza-primary/20 to-finza-accent/20 rounded-full blur-3xl -z-10" />
             
             <img 
-              src="https://images.unsplash.com/photo-1616077168079-7e09a677fb2c?auto=format&fit=crop&q=80&w=800&h=1000" 
+              src="/herosection.png" 
               alt="Finza AI Expense Tracker Dashboard" 
-              className="w-full max-w-md mx-auto rounded-[2.5rem] shadow-2xl border-8 border-white/50 glass-panel object-cover"
+              className="w-full max-w-2xl mx-auto rounded-[2.5rem] shadow-2xl border-8 border-white/50 glass-panel object-cover"
               referrerPolicy="no-referrer"
             />
             

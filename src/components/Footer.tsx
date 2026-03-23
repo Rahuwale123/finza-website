@@ -6,12 +6,10 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-1">
-            <a href="#" className="text-2xl font-bold text-finza-black flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-finza-primary to-finza-secondary flex items-center justify-center text-white">
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-              </div>
-              Finza
-            </a>
+            <div className="flex items-center gap-2 mb-6">
+              <img src="/logo.png" alt="Finza Logo" className="w-8 h-8 object-contain" />
+              <span className="text-xl font-bold text-finza-black">Finza</span>
+            </div>
             <p className="text-gray-500 mb-6">
               Your finances, organized instantly. The smart expense tracker powered by AI.
             </p>

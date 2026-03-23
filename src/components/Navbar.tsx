@@ -28,11 +28,9 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+        <div className="flex justify-between items-center h-20">
           <a href="#" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-finza-primary to-finza-secondary flex items-center justify-center text-white shadow-lg shadow-finza-primary/20 group-hover:scale-105 transition-transform">
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-            </div>
+            <img src="/logo.png" alt="Finza" className="w-10 h-10 object-contain" />
             <span className="text-2xl font-bold text-finza-black tracking-tight">Finza</span>
           </a>
 

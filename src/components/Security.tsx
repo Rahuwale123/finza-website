@@ -65,7 +65,7 @@ export default function Security() {
             className="relative"
           >
             <img 
-              src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800&h=800" 
+              src="/unnamed (2).jpg" 
               alt="Finza Security and Trust" 
               className="w-full max-w-md mx-auto rounded-[2rem] shadow-2xl border border-white/10 object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-500"
               referrerPolicy="no-referrer"

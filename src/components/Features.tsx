@@ -83,6 +83,9 @@ export default function Features() {
             <p className="text-white/80 mb-6">
               Powered by Google Gemini AI. Get personalized insights, ask questions about your spending, and receive actionable advice.
             </p>
+            <div className="mb-6 rounded-2xl overflow-hidden border border-white/20 shadow-lg">
+              <img src="/unnamed.jpg" alt="Finza AI Advisor" className="w-full h-40 object-cover" />
+            </div>
             <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm border border-white/20">
               <p className="text-sm italic">"You spent 20% more on dining this week. Want me to set a budget?"</p>
             </div>
